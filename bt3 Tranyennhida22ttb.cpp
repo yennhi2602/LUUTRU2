@@ -10,12 +10,18 @@ int a;
 
 int main()
 { 
-    int a[20],n;
+    int v[20],d,y;
     
     	printf("\n\n Nhap so nguyen duong n: ");
-    	scanf("%d",&n);
+    	scanf("%d",&d);
      
-nhapmang1c (a,n);
+nhapmang1c (v,d);
+xuatmang1c (v,d);
+Tim_max (v,d);
+tinhtich_mang (v,d);
+printf("nhap so phan tu x la:=");
+scanf("%d",&y);
+Tim_x(v,y,d);
 return 0;
 }
 
@@ -58,3 +64,16 @@ void Tim_max(int v[20],int d )
    	e=t;
 }
 }
+// xay dug ham tim x
+void Tim_x(int v[20],int y,int d)
+{
+	int i,dem=0;
+	for (i=0;i<d;i++)
+	{
+		if (v[i]==y)
+		  printf("\n\n Gia tri %d cua phan tu v[%d] bang gia tri cua x",y,i);
+		if (v[i]==y)
+		dem++;
+		}
+}
+
