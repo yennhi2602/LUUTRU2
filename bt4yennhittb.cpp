@@ -20,31 +20,25 @@ void nhapmang(int a[10][10],int m,int n)
 {
 	for(int i=0;i<10;i++)
 	{
-		for (int j=0;j<10;j++)
+		for (int j=0;j<n;j++)
 		{
 			printf("\n\n Nhap a[%d][%d]: ",i,j);
-			scanf("%d",*a+i*10+j);
+			scanf("%d",&a[i][j]);
 		}
-	}printf("\n mang vua nhap: \n");
+}
 }
 
 void xuatmang(int a[10][10],int m,int n)
 {
-	for(int i=0;i<10;i++)
+	for(int i=0;i<n;i++)
 	{
-		for(int j=0;j<10;j++)
+		for(int j=0;j<n;j++)
 		{
-		  printf("%5d",*(*a+i*10+j));
-		  printf("\n");
-	    }
-printf("\n Dia chi cac phan tu:\n");
-for(i=0;i<10;i++)
-{
-	for(int j=0;j<10;j++)
-	printf("%5x",(*a+i*10+j));
+		  printf("%d",&a[i][j]);
+	}
+	
 	printf("\n\n");
 }
-
-	}
 }
+
 
