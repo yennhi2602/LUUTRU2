@@ -1,5 +1,5 @@
 Bài 4: Cau truc ngan xep(Stack)
-Stack cài ??t b?ng m?ng
+Stack cai dat bang mang
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
