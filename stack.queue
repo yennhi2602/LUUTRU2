@@ -1,4 +1,4 @@
-Bài 4: C?u trúc ng?n x?p (Stack)
+Bài 4: Cau truc ngan xep(Stack)
 Stack cài ??t b?ng m?ng
 #include<stdio.h>
 #include<conio.h>
@@ -75,7 +75,7 @@ int n;stack s;sinhvien x;
 	}
 	getch();
 }
-Bài 5: C?u trúc hàng ??i (Queue)
+Bài 5: Cau truc hang doi(Queue)
 Queue cài ??t b?ng m?ng
 #include"stdio.h"
 #include"conio.h"
