@@ -1,5 +1,5 @@
-Bài 4: C?u trúc ng?n x?p (Stack)
-Stack cài ??t b?ng m?ng
+BÃ i 4: C?u trÃºc ng?n x?p (Stack)
+Stack cÃ i ??t b?ng m?ng
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
@@ -75,8 +75,8 @@ int n;stack s;sinhvien x;
 	}
 	getch();
 }
-Bài 5: C?u trúc hàng ??i (Queue)
-Queue cài ??t b?ng m?ng
+BÃ i 5: C?u trÃºc hÃ ng ??i (Queue)
+Queue cÃ i ??t b?ng m?ng
 #include"stdio.h"
 #include"conio.h"
 #define N 20
@@ -182,7 +182,7 @@ while(!empty(s))
       */
 }
 }
-Stack cài ??t b?ng danh sách liên k?t
+Stack cÃ i ??t b?ng danh sÃ¡ch liÃªn k?t
 #include <stdio.h>
 #include<conio.h>
 typedef struct sinhvien
@@ -279,7 +279,7 @@ int main()
 	getch();
 }
 
-Queue cài ??t b?ng danh sách liên k?t
+Queue cÃ i ??t b?ng danh sÃ¡ch liÃªn k?t
 #include<stdio.h>
 #include<conio.h>
 # define N 20
