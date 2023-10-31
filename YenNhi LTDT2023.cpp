@@ -1,57 +1,57 @@
-
-#include <iostream>
-
-using namespace std;
+#include <stdio.h>
 
 int main() {
-  int n;
-  cout << "Nhap so phan tu cua mang: ";
-  cin >> n;
-  int arr[n];
-  for (int i = 0; i < n; i++) {
-    cout << "Nhap phan tu thu " << i + 1 << ": ";
-    cin >> arr[i];
-  }
-  cout << "Cac phan tu cua mang la: ";
-  for (int i = 0; i < n; i++) {
-    cout << arr[i] << " ";
-  }
-  cout << endl;
-  int x;
-  cout << "Nhap x: ";
-  cin >> x;
-  cout << "arr[" << x << "] = " << arr[x] << endl;
+    int n, i;
+    printf("Nhap so phan tu cua mang: ");
+    scanf("%d", &n);
 
-  int max_value = arr[0];
-  int max_index = 0;
-  for (int i = 1; i < n; i++) {
-    if (arr[i] > max_value) {
-      max_value = arr[i];
-      max_index = i;
-    }
-  }
-  cout << "Phan tu lon nhat trong mang la: arr[" << max_index << "] = " << max_value << endl;
-  int min_value = arr[0];
-  int min_index = 0;
-  for (int i = 1; i < n; i++) {
-    if (arr[i] < min_value) {
-      min_value = arr[i];
-      min_index = i;
-    }
-  }
-  cout << "Phan tu be nhat trong mang la: arr[" << min_index << "] = " << min_value << endl;
-  cout << "Cac so le trong mang la: ";
-  for (int i = 0; i < n; i++) {
-    if (arr[i] % 2 != 0) {
-      cout << arr[i] << " ";
-    }
-  }
-  cout << endl;
-  int sum = 0;
-  for (int i = 0; i < n; i++) {
-    sum += arr[i];
-  }
-  cout << "Tong gia tri cua cac phan tu trong mang la: " << sum << endl;
+    int arr[n];
 
-  return 0;
+    printf("Nhap cac phan tu cua mang:\n");
+    for (i = 0; i < n; i++) {
+        printf("Phan tu thu %d: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+
+    int x;
+    printf("Nhap x: ");
+    scanf("%d", &x);
+
+    printf("Gia tri phan tu thu %d la: %d\n", x, arr[x - 1]);
+
+    int max = arr[0];
+    int max_index = 0;
+    for (i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            max_index = i;
+        }
+    }
+    printf("Vi tri max: %d, gia tri max: %d\n", max_index + 1, max);
+
+    int min = arr[0];
+    int min_index = 0;
+    for (i = 1; i < n; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+            min_index = i;
+        }
+    }
+    printf("Vi tri min: %d, gia tri min: %d\n", min_index + 1, min);
+
+    printf("Cac so le trong mang: ");
+    for (i = 0; i < n; i++) {
+        if (arr[i] % 2 != 0) {
+            printf("%d ", arr[i]);
+        }
+    }
+    printf("\n");
+
+    int sum = 0;
+    for (i = 0; i < n; i++) {
+        sum += arr[i];
+    }
+    printf("Tong gia tri cua cac phan tu trong mang: %d\n", sum);
+
+    return 0;
 }
